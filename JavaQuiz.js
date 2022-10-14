@@ -4,7 +4,7 @@
       choices: [2, 5, 10, 15, 20],
       correctAnswer: 10
     }, {
-      question: "What is 3*6?",
+      question: "What is 3*6?", 
       choices: [3, 6, 9, 12, 18],
       correctAnswer: 18
     }, {
@@ -26,9 +26,11 @@
     var quiz = $('#quiz'); 
     
     // Display initial question
+
     displayNext();
     
     // Click handler for the 'next' button
+
     $('#next').on('click', function (e) {
       e.preventDefault();
       
@@ -150,6 +152,7 @@
     }
     
     // Computes score and returns a paragraph element to be displayed
+    
     function displayScore() {
       var score = $('<p>',{id: 'question'});
       
